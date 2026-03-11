@@ -1,0 +1,78 @@
+Test suite Practica02-test: RUNNING...
+
+Tests variables
+  Fórmula Tt [✔]
+  Fórumla Cr [✔]
+  Fórmula Cg [✔]
+Tests interpretacion
+  Fórmula Tt [✔]
+  Fórumla Cr [✔]
+  Fórmula Cg-True [✔]
+  Fórmula Cg-False [✔]
+Tests estadosPosibles
+  Fórmula Tt [✔]
+  Fórmula Cr [✔]
+  Fórmula Cg [✘]
+Tests modelos
+  Fórmula Tt [✔]
+  Fórmula Cr [✔]
+  Fórmula Cg [✘]
+Tests sonEquivalentes
+  Fórmulas Equivalentes [✘]
+  Fórmulas No Equivalentes [✔]
+Tests tautologia
+  Fórmula Tt [✔]
+  Fórmula Cr [✔]
+  Fórmula Cg [✔]
+Tests contradiccion
+  Fórmula Tt [✔]
+  Fórumla Cr [✔]
+  Fórmula Cg [✔]
+Tests consecuenciaLogica
+  Argumento válido [✔]
+  Argumento válido 2 [✔]
+  Argumento inválido [✘]
+  Gamma insatisfacible [✔]
+
+Failures:
+
+  test/Practica02Test.hs:51:36: 
+  1) Tests estadosPosibles Fórmula Cg
+       Actual list is not a permutation of expected list!
+         expected elements: [["q","s","p"], ["q","s"], ["q","p"], ["q"], ["s","p"], ["s"], ["p"], []]
+         actual elements:   [["p","q","s"], ["p","q"], ["p","s"], ["p"], ["q","s"], ["q"], ["s"], []]
+         missing elements:  [["q","s","p"], ["q","p"], ["s","p"]]
+         extra elements:    [["p","q","s"], ["p","q"], ["p","s"]]
+
+  To rerun use: --match "/Tests estadosPosibles/Fórmula Cg/" --seed 1371758487
+
+  test/Practica02Test.hs:61:28: 
+  2) Tests modelos Fórmula Cg
+       Actual list is not a permutation of expected list!
+         expected elements: [["q","s","p"], ["q","p"], ["q"], ["s","p"], ["s"], ["p"], []]
+         actual elements:   [["p","q","s"], ["p","q"], ["p","s"], ["p"], ["q"], ["s"], []]
+         missing elements:  [["q","s","p"], ["q","p"], ["s","p"]]
+         extra elements:    [["p","q","s"], ["p","q"], ["p","s"]]
+
+  To rerun use: --match "/Tests modelos/Fórmula Cg/" --seed 1371758487
+
+  test/Practica02Test.hs:65:87: 
+  3) Tests sonEquivalentes Fórmulas Equivalentes
+       expected: True
+        but got: False
+
+  To rerun use: --match "/Tests sonEquivalentes/Fórmulas Equivalentes/" --seed 1371758487
+
+  test/Practica02Test.hs:98:70: 
+  4) Tests consecuenciaLogica Argumento inválido
+       expected: False
+        but got: True
+
+  To rerun use: --match "/Tests consecuenciaLogica/Argumento inválido/" --seed 1371758487
+
+Randomized with seed 1371758487
+
+Finished in 0.0043 seconds
+25 examples, 4 failures
+Test suite Practica02-test: FAIL
+Test suite logged to: /home/xiro/Documentos/2026/4to semestre/LoComp/haskellPractice/LC2026-2-Practica02/dist-newstyle/build/x86_64-linux/ghc-9.4.8/Practica02-0.1.0.0/t/Practica02-test/test/Practica02-0.1.0.0-Practica02-test.log
